@@ -1,0 +1,173 @@
+.footer_yellow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #f5ba13;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    width: 96%;
+    text-align: center;
+}
+
+.footer_yellow p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5ba13;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 96%;
+    top: 0;
+}
+
+.header img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.note {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 20px;
+    width: 240px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.note h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.note p {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.main_note {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 20px auto;
+    width: 300px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.main_note form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_note input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_note textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.main_note input::placeholder,
+.main_note textarea::placeholder {
+    color: #aaa;
+}
+
+.note button {
+    align-self: flex-end;
+    background-color: #f5ba13;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.note button:hover {
+    background-color: #e01111;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.note button:active {
+    transform: scale(0.95);
+}
+
+.note button .deleteIcon {
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.main_note Button {
+    align-self: flex-end;
+    background-color: #f5ba13;
+    color: #fff;
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.main_note Button:hover {
+    background-color: #e09e11;
+}
+
+.main_note .plus_sign {
+    font-size: 1.5rem;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adds space between the notes */
+    justify-content: center;
+    /* Center aligns the notes horizontally */
+    padding: 20px;
+}
